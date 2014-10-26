@@ -25,7 +25,6 @@ if(!empty($_POST))
 		          U kunt nu <a href='login.php'>inloggen</a>.";
 		die($tekst);
 	}
-
 }
 ?>
 <!DOCTYPE html>
