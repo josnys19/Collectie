@@ -17,7 +17,7 @@ if(!empty($_POST))
 	}
 	else
 	{
-		//e-mailadres bestaat, gegevens toevoegen aan de tabel gebruikers
+		//e-mailadres bestaat niet, gegevens toevoegen aan de tabel gebruikers
 		$sql = "INSERT INTO gebruikers (email, wachtwoord) 
 				VALUES('$email','$wachtwoord')";
 		$resultaat = $cxn->query($sql);
@@ -39,8 +39,8 @@ if(!empty($_POST))
 	Als loginnaam wordt uw e-mailadres gebruikt.</p>
 <hr/>
 <form name="formulier" method="post" action="<?=$_SERVER['PHP_SELF']?>">
-	E-mailadres: <input name="email" type="text" size="30" maxlength="40">(maximaal 40 tekens)<br/>
-	Wachtwoord: <input name="wachtwoord" type="password" size="20" maxlength="20">(maximaal 20 tekens)<br/>
+	E-mailadres: <input name="email" type="text" size="30" maxlength="40"/>(maximaal 40 tekens)<br/>
+	Wachtwoord: <input name="wachtwoord" type="password" size="20" maxlength="20"/>(maximaal 20 tekens)<br/>
 	<button type="submit">Registeren</button>
 	<button type="reset">Wissen</button>
 </form>

@@ -2,7 +2,7 @@
 
 $to = 'jos.nys@gmail.com';
 
-$subject = 'Website Change Reqest';
+$subject = 'Website Change Request';
 
 $message = "Hello world";
 
